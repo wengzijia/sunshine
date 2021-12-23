@@ -1,24 +1,3 @@
-# letao
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+表单
+校验规则  required必填   不填会提示message
+:rules="[{ required: true, message: '请填写用户名' }]"

@@ -18,7 +18,7 @@ ssh.connect({
   const successful = []
   // 把本地目录中的所有文件。上传到指定服务器中的目录中去
   let site_dir = "./dist/";
-  let server_site_dir = "/www/wwwroot/www.sunshine.com";
+  let server_site_dir = "/www/wwwroot/wengzijia.top";
   ssh.putDirectory(site_dir, server_site_dir, {
     recursive: true,
     concurrency: 10,
