@@ -4,7 +4,7 @@
       <!-- 搜索框 -->
       <van-sticky>
         <div class="header">
-          <img src="../assets/images/sunLogo.jpg" alt="" />
+          <img src="../assets/images/sunLogo.png" alt="" />
           <!-- @focus 输入框获得焦点时触发 -->
           <!-- @blur="$router.back()" 失去焦点返回上一层 -->
           <van-search
@@ -12,7 +12,7 @@
             v-model="value"
             placeholder="搜一搜更健康"
           />
-          <img src="../assets/images/miLogo.jpg" alt="" />
+          <!-- <img src="../assets/images/miLogo.jpg" alt="" /> -->
         </div>
       </van-sticky>
       <!-- 轮播图 -->
@@ -130,6 +130,7 @@ export default {
     },
   },
   created() {
+    console.log("移除console.log测试");
     // 因为刷新的时候会触发created,所以可以在这里把Home页面隐藏掉
     let { name } = this.$route;
     if (name !== "Home") {
